@@ -18,22 +18,10 @@ export default function SEO({
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:site_name" content="Tyler Benning" />
-      <meta
-        property="og:image"
-        content={`https://tylerbenning.com/meta/${og}`}
-      />
+      <meta property="og:site_name" content="MBU" />
+
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta
-        property="twitter:image"
-        content={`https://tylerbenning.com/meta/${og}`}
-      />
-
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:creator" content="tylerbenning_" />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
 
       <link
         rel="apple-touch-icon"

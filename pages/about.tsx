@@ -10,8 +10,8 @@ export default function About() {
     <Layout>
       <SEO
         og="image011.jpg"
-        title="About"
-        description="About the life and times of Tyler"
+        title="О нас"
+        description="Про эмбэс все такое !"
       />
       <div className="relative">
         <div className="relative order-1 -z-10 lg:order-2">
