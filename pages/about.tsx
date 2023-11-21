@@ -1,7 +1,6 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 
-import { ExternalLink } from "../components/Footer"
 import Layout from "../components/Layout"
 import SectionWorkList from "../components/SectionWorkList"
 import SEO from "../components/SEO"

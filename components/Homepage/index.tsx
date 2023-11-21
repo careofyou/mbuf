@@ -1,12 +1,4 @@
 import React from "react"
-
-import {
-  BeakerIcon,
-  BriefcaseIcon,
-  FilterIcon,
-  CodeIcon,
-  SearchCircleIcon,
-} from "@heroicons/react/solid"
 import { motion } from "framer-motion"
 
 import PersonalProjectList from "../PersonalProjectList"
