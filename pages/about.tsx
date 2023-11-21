@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-import Image from "next/image"
 
 import Layout from "../components/Layout"
 import SectionWorkList from "../components/SectionWorkList"
@@ -33,14 +32,7 @@ export default function About() {
             initial={{ rotate: 10 }}
             animate={{ rotate: 0 }}
             transition={{ type: "spring", bounce: 0.25, mass: 2 }}
-          >
-            <Image
-              src="/img/about-tyler.jpg"
-              alt="photo of tyler"
-              height="160"
-              width="160"
-            />
-          </motion.div>
+          ></motion.div>
         </div>
       </div>
       <div className="max-w-3xl mx-auto mt-4 mb-20 md:mt-12 md:pt-16">
@@ -92,7 +84,7 @@ export default function About() {
           История компании История компании История компании История компании
           История компании История компании История компании
         </p>
-        <h2 className="pt-4 mb-4 text-lg font-semibold">One Liners</h2>
+        <h2 className="pt-4 mb-4 text-lg font-semibold">История компании</h2>
         <p className="mb-4 font-serif text-xl antialiased tracking-[.005em] text-secondary">
           История компании История компании
         </p>

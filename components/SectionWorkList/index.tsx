@@ -1,53 +1,40 @@
 import Image from "next/image"
 
-import brainstationLogo from "../../public/img/work-logos/brainstation.png"
-import githubLogo from "../../public/img/work-logos/github-logo.png"
-import ibmLogo from "../../public/img/work-logos/ibm.png"
-import paddleLogo from "../../public/img/work-logos/paddle.png"
-import togetherLogo from "../../public/img/work-logos/together.png"
-import tophatLogo from "../../public/img/work-logos/top-hat.png"
-
 const workHistory = [
   {
     title: "Отдел продаж",
     role: "Россия, 630090, г. Новосибирск, ул. Инженерная, 16 (схема проезда)",
     date: "(383) 363-77-01",
-    img: githubLogo,
     url: "/",
   },
   {
     title: "Коммерческий директор",
     role: "Баукова Анастасия Геннадьевна",
     date: "+7 913 955 5597",
-    img: togetherLogo,
     url: "/",
   },
   {
     title: "Заведующий складом ",
     role: "Рязанцева Елена Юрьевна",
     date: "lena.ryazantseva@mbu.ru",
-    img: tophatLogo,
     url: "/",
   },
   {
     title: "Заместитель директора по производству",
     role: "Ломовская Татьяна Давыдовна",
     date: "lomovskaya@mbu.ru",
-    img: brainstationLogo,
     url: "/",
   },
   {
     title: "Отдел биологического и технологического контроля (ОБТК)",
-    role: "",
+    role: "Отдел биологического и технологического контроля (ОБТК)",
     date: "obtk@mbu.ru",
-    img: paddleLogo,
     url: "https://www.paddlehr.com/",
   },
   {
     title: "Офис",
     role: "Почтовый адрес: Россия, 630090, г. Новосибирск, ул. Инженерная, 16 (схема проезда) ",
     date: "info@mbu.ru",
-    img: ibmLogo,
     url: "https://www.ibm.com/products/openpages-with-watson",
   },
 ]
@@ -67,7 +54,6 @@ export default function SectionWorkList() {
             key={work.title}
             className="flex flex-col items-start justify-between p-3 md:items-center md:space-x-2 md:flex-row"
           >
-            <EmployerItem title={work.title} src={work.img} />
             <div className="flex items-center justify-between w-full md:w-fit space-x-4">
               <span className="text-sm text-secondary">{work.role}</span>
               <div className="flex items-center space-x-2">
