@@ -16,11 +16,11 @@ export default function About() {
       />
       <div className="relative">
         <div className="relative order-1 -z-10 lg:order-2">
-          <div className="inset-y-0  lg:-mt-40 lg:-mr-20">
+          <div className="inset-y-0  lg:mt-40 lg:mr-20">
             <motion.img
               src="img/image011.jpg"
               alt="cursor on a white box with abstract design"
-              className=" mx-auto w-full md:w-auto"
+              className="w-full mx-auto md:w-auto"
               initial={{ opacity: 0 }}
               transition={{ ease: "easeIn", duration: 1.5 }}
               animate={{ opacity: 1 }}
@@ -70,46 +70,46 @@ export default function About() {
         <h2 className="mt-12 text-lg font-semibold">Конакты</h2>
         <SectionWorkList />
         <h2 className="mb-4 text-lg font-semibold">Уважаемые коллеги! </h2>
-        <p className="mb-4 font-serif text-xl antialiased leading-relaxed -tracking-[.005em] text-secondary">
+        <p className="mb-4 font-serif text-xl antialiased leading-relaxed tracking-[.005em] text-secondary">
           По всем вопросам, связанным с приобретением продукции, ценами,
           условиями поставки просим обращаться в Отдел продаж.
         </p>
-        <p className="mb-4 font-serif text-xl antialiased leading-relaxed -tracking-[.005em] text-secondary">
+        <p className="mb-4 font-serif text-xl antialiased leading-relaxed tracking-[.005em] text-secondary">
           История компании . История компании История компании История компании
           История компании История компании История компании История компании
           История компании История компании История компании
         </p>
         <h2 className="pt-4 mb-4 text-lg font-semibold">История компании</h2>
-        <p className="mb-4 font-serif text-xl antialiased leading-relaxed -tracking-[.005em] text-secondary">
+        <p className="mb-4 font-serif text-xl antialiased leading-relaxed tracking-[.005em] text-secondary">
           История компании История компании История компании История компании .
           История компании История компании История компании История компании
           История компании История компании История компании История компании
           История компании История компании История компании История компании
           История компании История компании
         </p>
-        <p className="mb-4 font-serif text-xl antialiased leading-relaxed -tracking-[.005em] text-secondary">
+        <p className="mb-4 font-serif text-xl antialiased leading-relaxed tracking-[.005em] text-secondary">
           История компании История компании История компании История компании
           История компании История компании История компании История компании
           История компании История компании История компании
         </p>
         <h2 className="pt-4 mb-4 text-lg font-semibold">One Liners</h2>
-        <p className="mb-4 font-serif text-xl antialiased -tracking-[.005em] text-secondary">
+        <p className="mb-4 font-serif text-xl antialiased tracking-[.005em] text-secondary">
           История компании История компании
         </p>
-        <p className="mb-4 font-serif text-xl antialiased -tracking-[.005em] text-secondary">
+        <p className="mb-4 font-serif text-xl antialiased tracking-[.005em] text-secondary">
           История компании История компании
         </p>
-        <p className="mb-4 font-serif text-xl antialiased -tracking-[.005em] text-secondary">
+        <p className="mb-4 font-serif text-xl antialiased tracking-[.005em] text-secondary">
           История компании История компании История компании
         </p>
-        <p className="mb-4 font-serif text-xl antialiased -tracking-[.005em] text-secondary">
+        <p className="mb-4 font-serif text-xl antialiased tracking-[.005em] text-secondary">
           История компании История компании
         </p>
-        <p className="mb-4 font-serif text-xl antialiased -tracking-[.005em] text-secondary">
+        <p className="mb-4 font-serif text-xl antialiased tracking-[.005em] text-secondary">
           История компании История компании История компании
         </p>
         <h2 className="pt-4 mb-4 text-lg font-semibold"> История компании</h2>
-        <p className="mb-4 font-serif text-xl antialiased -tracking-[.005em] text-secondary">
+        <p className="mb-4 font-serif text-xl antialiased tracking-[.005em] text-secondary">
           История компании История компании История компании История компании
           История компании История компании История компании История компании
           История компании История компании История компании

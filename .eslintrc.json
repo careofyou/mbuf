@@ -12,6 +12,7 @@
     "node": true
   },
   "rules": {
+    "@next/next/no-page-custom-font": "off",
     "no-unused-vars": "off",
     "react/require-default-props": 0,
     "unused-imports/no-unused-imports": "error",

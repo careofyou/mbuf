@@ -1,4 +1,5 @@
 import React from "react"
+
 import { motion } from "framer-motion"
 
 import PersonalProjectList from "../PersonalProjectList"
@@ -72,11 +73,11 @@ export default function Homepage({ posts, projects }: Props) {
 
       <FadeIn>
         <section className="max-w-3xl px-5 py-6 mx-auto mt-6 mb-10 text-center bg-blue-200  border-2 border-gray-200 border-dotted rounded-lg md:mb-20 md:mt-32 md:py-12 md:px-14">
-          <h2 className="text-left text-xl font-semibold md:text-2xl text-primary">
+          <h2 className="text-xl font-semibold text-left md:text-2xl text-primary">
             Наша миссия:
           </h2>
           <div className="flex flex-wrap justify-center mt-6 -m-1">
-            <h2 className="text-left text-xl font-sm md:text-xl text-primary">
+            <h2 className="text-xl text-left font-sm md:text-xl text-primary">
               Текст о нашей миссии Текст о нашей миссии Текст о нашей миссии
             </h2>
           </div>
