@@ -4,20 +4,25 @@ import { useRouter } from "next/router"
 export default function Nav() {
   const router = useRouter()
   const navigation = [
-    { name: "Home", href: "/#", isActive: router.pathname === "/" },
+    { name: "Главная", href: "/#", isActive: router.pathname === "/" },
     {
-      name: "Work",
+      name: "Проекты",
       href: "/#work",
       isActive: false,
     },
-    { name: "About", href: "/about", isActive: router.pathname === "/about" },
+    { name: "О нас", href: "/about", isActive: router.pathname === "/about" },
+    {
+      name: "Контакты",
+      href: "/contacts",
+      isActive: router.pathname === "/contacts",
+    },
   ]
   return (
-    <nav className="sticky top-0 z-10 border-b bg-white/80 border-primary backdrop-blur-md">
+    <nav className="sticky top-0 z-10 border-b bg-blue/80 border-primary backdrop-blur-md">
       <div className="container flex items-center justify-between w-full px-4 pt-2 pb-2 mx-auto lg:px-0 max-w-screen-lg md:flex-row">
         <Link href="/">
-          <a className="py-1 my-1 mr-0 font-sans text-sm antialiased font-semibold border-b border-gray-700 border-opacity-0 hover:border-opacity-100 md:mr-6 md:inline-block text-secondary">
-            Tyler&nbsp;Benning
+          <a className="py-1 my-1 mr-0 font-sans text-sm antialiased font-semibold border-b border-blue-700 border-opacity-0 hover:border-opacity-100 md:mr-6 md:inline-block text-secondary">
+            Медико-биологический&nbsp;Союз
           </a>
         </Link>
 

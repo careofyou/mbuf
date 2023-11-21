@@ -7,12 +7,11 @@ export default function NotFound() {
   return (
     <Layout>
       <SEO />
-      <h1 className="mb-4 font-serif text-4xl">404: Couldn't Find this Page</h1>
+      <h1 className="mb-4 font-serif text-4xl">404:Не найдено</h1>
       <p className="mb-2 text-lg text-secondary">
-        Hmm, looks like you accidentally got directed to a page that doesn't
-        exist.
+        Похоже, такой страницы не существует.
       </p>
-      <Link href="/">Back Home</Link>
+      <Link href="/">Назад</Link>
     </Layout>
   )
 }

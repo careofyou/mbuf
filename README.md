@@ -1,8 +1,6 @@
-## Tyler Benning's Portfolio Site
-
 1. Clone
 2. Run `yarn install`
-3. Run `yarn dev` 
+3. Run `yarn dev`
 4. ???
 5. Profit
 

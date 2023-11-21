@@ -29,7 +29,7 @@ export default function ProjectPage({
           <div className="mb-8">
             <Link href="/#work">
               <a className="border-b border-gray-700 text-secondary hover:bg-gray-100">
-                &larr; Back to Projects
+                &larr; Назад
               </a>
             </Link>
           </div>

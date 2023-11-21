@@ -9,44 +9,44 @@ import tophatLogo from "../../public/img/work-logos/top-hat.png"
 
 const workHistory = [
   {
-    title: "GitHub",
-    role: "Senior Design",
-    date: "2022-\u00a0\u00a0",
+    title: "Отдел продаж",
+    role: "Россия, 630090, г. Новосибирск, ул. Инженерная, 16 (схема проезда)",
+    date: "(383) 363-77-01",
     img: githubLogo,
-    url: "https://www.github.com/",
+    url: "/",
   },
   {
-    title: "Together",
-    role: "Director of Design",
-    date: "2019-2022",
+    title: "Коммерческий директор",
+    role: "Баукова Анастасия Геннадьевна",
+    date: "+7 913 955 5597",
     img: togetherLogo,
-    url: "https://www.togetherplatform.com/",
+    url: "/",
   },
   {
-    title: "Top Hat",
-    role: "Senior Product Designer",
-    date: "2017-19",
+    title: "Заведующий складом ",
+    role: "Рязанцева Елена Юрьевна",
+    date: "lena.ryazantseva@mbu.ru",
     img: tophatLogo,
-    url: "https://tophat.com/",
+    url: "/",
   },
   {
-    title: "Brainstation",
-    role: "UX Teaching Assistant",
-    date: "2016-17",
+    title: "Заместитель директора по производству",
+    role: "Ломовская Татьяна Давыдовна",
+    date: "lomovskaya@mbu.ru",
     img: brainstationLogo,
-    url: "https://brainstation.io/",
+    url: "/",
   },
   {
-    title: "Paddle HR",
-    role: "Founding Designer",
-    date: "2016-17",
+    title: "Отдел биологического и технологического контроля (ОБТК)",
+    role: "",
+    date: "obtk@mbu.ru",
     img: paddleLogo,
     url: "https://www.paddlehr.com/",
   },
   {
-    title: "IBM",
-    role: "User Experience Designer",
-    date: "2015-16",
+    title: "Офис",
+    role: "Почтовый адрес: Россия, 630090, г. Новосибирск, ул. Инженерная, 16 (схема проезда) ",
+    date: "info@mbu.ru",
     img: ibmLogo,
     url: "https://www.ibm.com/products/openpages-with-watson",
   },
@@ -74,7 +74,6 @@ export default function SectionWorkList() {
                 <span className="font-mono text-sm text-tertiary">
                   {work.date}
                 </span>
-                <span className="mb-1 leading-snug text-tertiary">↗</span>
               </div>
             </div>
           </div>

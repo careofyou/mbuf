@@ -7,26 +7,7 @@ export function TriSquareIcon() {
       fill="none"
       viewBox="0 0 62 42"
     >
-      <g strokeWidth="2" clipPath="url(#clip0_611_4813)">
-        <path
-          fill="#EED4C3"
-          stroke="#EED4C3"
-          d="M1.304 12.631H31.304V42.631H1.304z"
-          transform="rotate(-22.184 1.304 12.631)"
-        ></path>
-        <path
-          fill="#E17757"
-          stroke="#E17757"
-          d="M22.414 24.109H44.414V46.109H22.414z"
-          transform="rotate(-40.536 22.414 24.11)"
-        ></path>
-        <path
-          fill="#18556C"
-          stroke="#18556C"
-          d="M46.395 25.485H56.395V35.485H46.395z"
-          transform="rotate(-45 46.395 25.485)"
-        ></path>
-      </g>
+      <g strokeWidth="2" clipPath="url(#clip0_611_4813)"></g>
       <defs>
         <clipPath id="clip0_611_4813">
           <path fill="#fff" d="M0 0H62V42H0z"></path>

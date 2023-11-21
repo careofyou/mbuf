@@ -7,7 +7,7 @@ type SEOProps = {
 }
 
 export default function SEO({
-  title = "Tyler Benning",
+  title = "МБС",
   og = "og-home.png",
   description = "Tyler Benning is a product designer with front end superpowers",
 }: SEOProps) {

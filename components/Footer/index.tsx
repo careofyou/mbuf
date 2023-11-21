@@ -6,20 +6,11 @@ export default function Footer() {
         <ul className="flex items-center text-sm text-secondary space-x-3">
           <li>© {getYear}</li>
           <li className="hidden text-gray-400 md:inline-block">&bull;</li>
-          <li className="hidden md:inline-block">
-            Built with Next.js, Tailwind, and Keystone.js
-          </li>
+          <li className="hidden md:inline-block">Медико-биологический Союз</li>
         </ul>
         <div className="flex items-center space-x-4">
-          <ExternalLink
-            href="https://www.linkedin.com/in/tylerbenning/"
-            title="LinkedIn"
-          />
-          <ExternalLink href="https://github.com/tbenning" title="GitHub" />
-          <ExternalLink
-            href="https://twitter.com/tylerbenning_"
-            title="Twitter"
-          />
+          <ExternalLink href="/" title="Мбс Технология" />
+          <ExternalLink href="/" title="Техноресурс" />
         </div>
       </div>
     </footer>

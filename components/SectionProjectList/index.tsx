@@ -57,7 +57,7 @@ export default function SectionProjectList({ projects }: Props) {
               {project.subtitle}
             </span>
             <Link href={`/project/${project.slug}`}>
-              <a className="w-full mt-2 btn-light md:w-auto">View Case Study</a>
+              <a className="w-full mt-2 btn-light md:w-auto">Подробнее</a>
             </Link>
           </div>
         </li>
