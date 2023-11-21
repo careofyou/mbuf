@@ -9,7 +9,7 @@ type SEOProps = {
 export default function SEO({
   title = "МБС",
   og = "og-home.png",
-  description = "Tyler Benning is a product designer with front end superpowers",
+  description = "Медико-биологический союз",
 }: SEOProps) {
   return (
     <Head>
