@@ -8,10 +8,6 @@ export default function Footer() {
           <li className="hidden text-gray-400 md:inline-block">&bull;</li>
           <li className="hidden md:inline-block">Медико-биологический Союз</li>
         </ul>
-        <div className="flex items-center space-x-4">
-          <ExternalLink href="/" title="Мбс Технология" />
-          <ExternalLink href="/" title="Техноресурс" />
-        </div>
       </div>
     </footer>
   )

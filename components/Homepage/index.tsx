@@ -1,7 +1,8 @@
 import React from "react"
 
 import { motion } from "framer-motion"
-
+import HistoryBlock from "../HistoryBlock"
+import NewsBlock from "../NewsBlock"
 import PersonalProjectList from "../PersonalProjectList"
 import SectionBlogList from "../SectionBlogsList"
 import SectionHeader from "../SectionHeaderUpdate"
@@ -68,11 +69,13 @@ export default function Homepage({ posts, projects }: Props) {
   return (
     <>
       <FadeIn>
-        <Hero />
+        <section style={{ marginTop: "1rem", marginBottom: "8rem" }}>
+          <Hero />
+        </section>
       </FadeIn>
-
+      <div className="mt-40"></div>
       <FadeIn>
-        <section className="max-w-3xl px-5 py-6 mx-auto mt-6 mb-10 text-center bg-blue-200  border-2 border-gray-200 border-dotted rounded-lg md:mb-20 md:mt-32 md:py-12 md:px-14">
+        <section className="max-w-5xl px-5 py-6 mx-auto mt-50 mb-20  text-center top-10 bg-blue-200  border-2 border-gray-200 border-dotted rounded-lg md:mb-20 md:mt-32 md:py-12 md:px-14">
           <h2 className="text-xl font-semibold text-left md:text-2xl text-primary">
             Наша миссия:
           </h2>
@@ -84,6 +87,23 @@ export default function Homepage({ posts, projects }: Props) {
         </section>
         <a id="writing" />
       </FadeIn>
+
+      {/* <FadeIn>
+        <section className="mx-auto mb-10 md:mb-15">
+          <SectionHeader
+            title="История"
+            subtitle="A smattering of tips, tricks, and thoughts from along the way"
+            icon={
+              <div className="transition duration-1000 ease-in-out hover:scale-150 hover:rotate-180">
+                <CircleIcon />
+              </div>
+            }
+          />
+          <div className="pt-8" />
+          <SectionProjectList projects={workProjects} />
+          <a id="work" />
+        </section>
+      </FadeIn> */}
 
       <FadeIn>
         <section className="mx-auto mb-10 md:mb-15">
@@ -97,7 +117,7 @@ export default function Homepage({ posts, projects }: Props) {
             }
           />
           <div className="pt-8" />
-          <SectionBlogList posts={posts} />
+          <NewsBlock />
           <a id="work" />
         </section>
       </FadeIn>

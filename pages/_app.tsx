@@ -1,16 +1,30 @@
 import "../styles/tailwind-custom.css"
 import "../styles/fonts.css"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 import { AnimatePresence } from "framer-motion"
 import type { AppProps } from "next/app"
 import { useRouter } from "next/router"
+import { useScrollBlock } from "../components/Nav/useScrollBlock"
 
 import Footer from "../components/Footer"
 import Nav from "../components/Nav"
 import * as ga from "../lib/ga"
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [blockScroll, allowScroll] = useScrollBlock()
+  const [showMobileNavigation, setShowMobileNavigation] = useState(false)
+
+  const mobileNavigationHandler = (): void => {
+    if (showMobileNavigation) {
+      setShowMobileNavigation(false)
+      allowScroll()
+    } else {
+      window.scrollTo({ top: 0 })
+      setShowMobileNavigation(true)
+      blockScroll()
+    }
+  }
   const router = useRouter()
 
   useEffect(() => {
@@ -30,7 +44,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Nav />
+      <Nav
+        showMobileNavigation={showMobileNavigation}
+        handleClick={mobileNavigationHandler}
+      />
       <AnimatePresence
         exitBeforeEnter
         onExitComplete={() => window.scrollTo(0, 0)}

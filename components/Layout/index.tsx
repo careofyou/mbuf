@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import ThemeContextProvider from "../NewsBlock//theme-context"
 
 type Props = {
   children: React.ReactNode
@@ -20,9 +21,11 @@ export default function Layout({ children }: Props) {
       transition={{ type: "linear", duration: 0.5 }}
       className="overflow-x-hidden"
     >
-      <div className="container mx-auto max-w-screen-lg">
-        <div className="px-4 lg:px-0">{children}</div>
-      </div>
+      <ThemeContextProvider>
+        <div className="container mx-auto max-w-screen-lg">
+          <div className="px-4 lg:px-0">{children}</div>
+        </div>
+      </ThemeContextProvider>
     </motion.main>
   )
 }
