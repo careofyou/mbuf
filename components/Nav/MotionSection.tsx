@@ -1,16 +1,17 @@
-import { PropsWithChildren } from 'react';
+import { ReactNode } from "react"
 
-import { motion, useReducedMotion } from 'framer-motion';
+import { motion, useReducedMotion } from "framer-motion"
 
-interface MotionSectionProps extends PropsWithChildren {
-  delay?: number;
+interface MotionSectionProps {
+  delay?: number
+  children?: ReactNode
 }
 
 const MotionSection: React.FC<MotionSectionProps> = ({
   children,
   delay = 0,
 }) => {
-  const shouldReduceMotion = useReducedMotion();
+  const shouldReduceMotion = useReducedMotion()
 
   return (
     <motion.div
@@ -23,7 +24,7 @@ const MotionSection: React.FC<MotionSectionProps> = ({
     >
       {children}
     </motion.div>
-  );
-};
+  )
+}
 
-export default MotionSection;
+export default MotionSection
