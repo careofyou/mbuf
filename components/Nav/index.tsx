@@ -83,11 +83,7 @@ export default function Nav() {
         <div className="px-8">
           <div className="flex flex-col gap-8 font-bold tracking-wider">
             {navigation.map((item) => (
-              <div
-                item={item}
-                key={item.name}
-                onClick={() => setToggleMenu(!toggleMenu)}
-              >
+              <div key={item.name} onClick={() => setToggleMenu(!toggleMenu)}>
                 <NavItem item={item} key={item.name} />
               </div>
             ))}
