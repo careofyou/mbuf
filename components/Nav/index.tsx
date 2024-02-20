@@ -28,62 +28,62 @@ export default function Nav() {
   ]
 
   return (
-    <nav className="sticky top-0 z-10 border-b bg-gray-100 font-mono">
+    <nav className="sticky top-0 z-10 border-b  bg-gray-100 ">
       <div className="container flex items-center justify-between w-full px-4 pt-2 pb-2 mx-auto lg:px-0 max-w-screen-lg md:flex-row">
-        {/* Left side of navbar */}
-        <div className="flex items-center">
-          <div>
-            <Link href="/">
-              <a className="py-1 my-1 mr-0 font-sans text-sm antialiased font-semibold border-b border-blue-700 border-opacity-0 hover:border-opacity-100 md:mr-6 md:inline-block text-secondary">
-                Медико-биологический&nbsp;Союз
-              </a>
-            </Link>
+        <div className="flex mx-auto justify-between w-5/6 ">
+          {/* Primary menu and logo */}
+          <div className="flex items-center gap-16 my-4">
+            {/* logo */}
+            <div>
+              <Link href="/">
+                <a className="py-1 my-1 mr-0 font-sans text-sm antialiased font-semibold border-b border-blue-700 border-opacity-0 hover:border-opacity-100 md:mr-6 md:inline-block text-secondary">
+                  Медико-биологический&nbsp;Союз
+                </a>
+              </Link>
+            </div>
+            {/* primary */}
+            <div className="hidden lg:flex gap-8 mb-1 text-md text-tertiary">
+              <div className="space-x-5">
+                {navigation
+                  .filter((e, i) => i !== 4)
+                  .map((item, i) => (
+                    <NavItem item={item} key={item.name} />
+                  ))}
+              </div>
+              <div className="space-x-5 lg:ml-20">
+                {navigation
+                  .filter((e, i) => i === 4)
+                  .map((item, i) => (
+                    <NavItem item={item} key={item.name} />
+                  ))}
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Centered navigation items */}
-        <div className="flex space-x-5 lg:hidden mx-auto">
-          {navigation.map((item) => (
-            <NavItem item={item} key={item.name} />
-          ))}
-        </div>
-
-        {/* Right side of navbar */}
-        <div className="flex items-center">
-          <div className="hidden lg:flex gap-8 mb-1 text-md text-tertiary">
-            {navigation
-              .filter((e, i) => i !== 4)
-              .map((item) => (
-                <NavItem item={item} key={item.name} />
-              ))}
-          </div>
-          <div className="hidden lg:flex">
-            {navigation
-              .filter((e, i) => i === 4)
-              .map((item) => (
-                <NavItem item={item} key={item.name} />
-              ))}
-          </div>
-
-          {/* Mobile navigation toggle */}
-          <div className="lg:hidden flex items-center">
-            <button onClick={() => setToggleMenu(!toggleMenu)}>
-              <Bars3Icon className="h-6" />
-            </button>
+          {/* secondary */}
+          <div className="flex gap-6">
+            {/* Mobile navigation toggle */}
+            <div className="lg:hidden flex items-center">
+              <button onClick={() => setToggleMenu(!toggleMenu)}>
+                <Bars3Icon className="h-6" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Mobile navigation */}
+      {/* mobile navigation */}
       <div
-        className={`fixed z-40 w-full bg-gray-100 overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 ${
+        className={`fixed z-40 w-full  bg-gray-100 overflow-hidden flex flex-col lg:hidden gap-12  origin-top duration-700 ${
           !toggleMenu ? "h-0" : "h-full"
         }`}
       >
         <div className="px-8">
           <div className="flex flex-col gap-8 font-bold tracking-wider">
-            {navigation.map((item) => (
-              <div key={item.name} onClick={() => setToggleMenu(!toggleMenu)}>
+            {navigation.map((item, i) => (
+              <div
+                item={item}
+                key={item.name}
+                onClick={(toggleMenu) => setToggleMenu(!toggleMenu)}
+              >
                 <NavItem item={item} key={item.name} />
               </div>
             ))}

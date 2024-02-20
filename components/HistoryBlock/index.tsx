@@ -12,7 +12,7 @@ export default function Experience() {
       <div className="bg-white">
         <div className="xl:container mx-auto pt-auto">
           <div className="flex flex-row flex-wrap">
-            <div className="flex-shrink max-w-full w-full lg:w-1/2">
+            <div className="flex-shrink max-w-full w-full lg:w-1/2 grayscale-[0%]  hover:grayscale-[0%]">
               <div className="box-one flex flex-row flex-wrap">
                 {experiencesData
                   .filter((e, i) => i >= 0 && i <= 1)
@@ -45,7 +45,7 @@ export default function Experience() {
                   ))}
               </div>
             </div>
-            <div className="flex-shrink max-w-full w-full lg:w-1/2">
+            <div className="flex-shrink max-w-full w-full lg:w-1/2 grayscale-[20%]  hover:grayscale-[0%]">
               <div className="box-one flex flex-row flex-wrap">
                 {experiencesData
                   .filter((e, i) => i >= 2 && i < 3)
@@ -78,7 +78,7 @@ export default function Experience() {
                   ))}
               </div>
             </div>
-            <div className="flex-shrink max-w-full w-full">
+            <div className="flex-shrink max-w-full w-full grayscale-[40%]  hover:grayscale-[0%]">
               <div className="box-one flex flex-row flex-wrap">
                 {experiencesData
                   .filter((e, i) => i >= 3 && i < 4)
@@ -117,7 +117,7 @@ export default function Experience() {
       <div className="bg-white">
         <div className="xl:container mx-auto pt-auto">
           <div className="flex flex-row flex-wrap">
-            <div className="flex-shrink max-w-full w-full">
+            <div className="flex-shrink max-w-full w-full grayscale-[6%]  hover:grayscale-[0%]">
               <div className="box-one flex flex-row flex-wrap">
                 {experiencesData
                   .filter((e, i) => i >= 4 && i < 5)
@@ -153,7 +153,7 @@ export default function Experience() {
             <div className="bg-white">
               <div className="xl:container mx-auto pt-auto">
                 <div className="flex flex-row flex-wrap">
-                  <div className="flex-shrink max-w-full w-full">
+                  <div className="flex-shrink max-w-full w-full grayscale-[80%]  hover:grayscale-[0%]">
                     <div className="box-one flex flex-row flex-wrap">
                       {experiencesData
                         .filter((e, i) => i >= 5 && i < 6)
@@ -193,7 +193,7 @@ export default function Experience() {
         </div>
       </div>
       <div className="bg-white">
-        <div className="xl:container mx-auto pt-auto">
+        <div className="xl:container mx-auto pt-auto grayscale-[90%]  hover:grayscale-[0%]">
           <div className="flex flex-row flex-wrap">
             <div className="flex-shrink max-w-full w-full">
               <div className="box-one flex flex-row flex-wrap">
@@ -228,7 +228,7 @@ export default function Experience() {
                   ))}
               </div>
             </div>
-            <div className="flex-shrink max-w-full w-full lg:w-1/2">
+            <div className="flex-shrink max-w-full w-full lg:w-1/2 grayscale-[100%]  hover:grayscale-[0%]">
               <div className="box-one flex flex-row flex-wrap">
                 {experiencesData
                   .filter((e, i) => i >= 7 && i < 8)
@@ -261,7 +261,7 @@ export default function Experience() {
                   ))}
               </div>
             </div>
-            <div className="flex-shrink max-w-full w-full lg:w-1/2">
+            <div className="flex-shrink max-w-full w-full lg:w-1/2 grayscale-[100%]  hover:grayscale-[0%]">
               <div className="box-one flex flex-row flex-wrap">
                 {experiencesData
                   .filter((e, i) => i >= 8 && i <= 9)
