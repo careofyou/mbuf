@@ -4,42 +4,15 @@ import Layout from "../../components/Layout"
 import SectionWorkList from "../../components/SectionWorkList"
 import SEO from "../../components/SEO"
 import { TriSquareIcon } from "../../components/StripeIcons"
-import HistoryBlock from "../../components/HistoryBlock"
+import NewsBlock from "../../components/NewsBlock"
 
 export default function About() {
   return (
     <Layout>
-      <SEO
-        og="image011.jpg"
-        title="О нас"
-        description="Про эмбэс все такое !"
-      />
-      <div className="relative">
-        <div className="relative order-1 -z-10 lg:order-2">
-          <div className="inset-y-0  lg:mt-40 lg:mr-20">
-            <motion.img
-              src="img/image011.jpg"
-              alt="cursor on a white box with abstract design"
-              className="w-full mx-auto md:w-auto"
-              initial={{ opacity: 0 }}
-              transition={{ ease: "easeIn", duration: 1.5 }}
-              animate={{ opacity: 1 }}
-            />
-          </div>
-        </div>
-        <div className="absolute top-0 right-44">
-          <motion.div
-            className="hidden overflow-hidden md:block md:w-40 md:h-40 rounded-md"
-            initial={{ rotate: 10 }}
-            animate={{ rotate: 0 }}
-            transition={{ type: "spring", bounce: 0.25, mass: 2 }}
-          ></motion.div>
-        </div>
-      </div>
       <div className="max-w-3xl mx-auto mt-4 mb-20 md:mt-12 md:pt-16">
         <TriSquareIcon />
         <h1 className="mt-4 mb-8 text-4xl antialiased font-bold text-primary">
-          О нас
+          Проекты
         </h1>
         <p className="mb-4 text-xl antialiased leading-relaxed tracking-tight text-secondary">
           Основная деятельность Группы компаний Медико-биологический Союз
@@ -57,7 +30,7 @@ export default function About() {
           автоматизированных диагностических комплексов, наборов реагентов для
           контроля качества лабораторных исследований.
         </p>
-        <HistoryBlock />
+        <NewsBlock />
       </div>
     </Layout>
   )
