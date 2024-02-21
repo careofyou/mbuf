@@ -3,8 +3,9 @@
 import React from "react"
 
 import "react-vertical-timeline-component/style.min.css"
-import { experiencesData } from "../../lib/data"
 import Image from "next/image"
+
+import { experiencesData } from "../../lib/data"
 
 export default function Experience() {
   return (

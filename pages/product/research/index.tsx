@@ -1,10 +1,8 @@
 import { motion } from "framer-motion"
 
 import Layout from "../../../components/Layout"
-import SectionWorkList from "../../../components/SectionWorkList"
-import SEO from "../../../components/SEO"
-import { TriSquareIcon } from "../../../components/StripeIcons"
 import ProductResearch from "../../../components/ProductBlock/ProductResearch"
+import SEO from "../../../components/SEO"
 
 export default function Product() {
   return (
