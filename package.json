@@ -9,7 +9,7 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
-    "@heroicons/react": "^2.1.1",
+    "@heroicons/react": "v1",
     "@keystone-6/core": "1.0.0",
     "@keystone-6/document-renderer": "^1.0.0",
     "@keystone-6/fields-document": "^1.0.0",
