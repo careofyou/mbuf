@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"
 
-import Layout from "../../../components/Layout"
-import ProductBlockmethod from "../../../components/ProductBlock/ProductBlockmethod"
-import SEO from "../../../components/SEO"
+import Layout from "@/Layout"
+import ProductBlockmethod from "@/ProductBlock/ProductBlockmethod"
+import SEO from "@/SEO"
 
 export default function Product() {
   return (
