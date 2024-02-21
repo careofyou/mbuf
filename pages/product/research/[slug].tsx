@@ -2,16 +2,26 @@ import React from "react"
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { useRouter } from "next/router"
 
 import Layout from "../../../components/Layout"
 import SEO from "../../../components/SEO"
 import { ifaData } from "../../../lib/data"
 
 export default function Product() {
-  const currentUrl = typeof window !== "undefined" ? window.location.href : ""
-  let slug = (url) => new URL(url).pathname.match(/[^\/](?!.*[\/])+/g)
-  var x = slug(currentUrl)
-  var y: number = +x
+  const router = useRouter()
+  const currentUrl = router.asPath
+
+  // Function to extract slug from URL pathname
+  const getSlugFromUrl = (url) => {
+    const pathname = new URL(url, "http://localhost").pathname
+    return pathname.match(/[^\/](?!.*[\/])+/g)
+  }
+
+  // Get the slug from the current URL
+  const slug = getSlugFromUrl(currentUrl)
+  const y = slug ? +slug[0] : 0
+
   return (
     <Layout>
       <SEO

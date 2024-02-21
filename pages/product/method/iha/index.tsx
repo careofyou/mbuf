@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 
 import Layout from "../../../../components/Layout"
-import ProductBlockiha from "../../../../components/ProductBlock/ProductBlockiha"
+import ProductBlockiha from "../../../../components/ProductBlock/ProductBlockiha/"
 import SEO from "../../../../components/SEO"
 
 export default function Product() {

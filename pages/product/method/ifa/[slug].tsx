@@ -1,25 +1,28 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { useRouter } from "next/router"
 
 import Layout from "../../../../components/Layout"
 import SEO from "../../../../components/SEO"
 import { ifaData } from "../../../../lib/data"
 
 export default function Product() {
-  // Function to get the slug from the URL
-  const getSlugFromUrl = (url: string) => {
-    const segments = new URL(url).pathname.split("/")
-    return segments[segments.length - 1]
-  }
+  const router = useRouter()
+  const [productIndex, setProductIndex] = useState(0)
 
-  // Get the slug from the current URL
-  const currentUrl = typeof window !== "undefined" ? window.location.href : ""
-  const slug = getSlugFromUrl(currentUrl)
+  useEffect(() => {
+    const getSlugFromUrl = (url: string) => {
+      const segments = new URL(url, "http://localhost").pathname.split("/")
+      return segments[segments.length - 1]
+    }
 
-  // Find the index of the product in the data array
-  const productIndex = ifaData.findIndex((product) => product.slug === slug)
+    const slug = getSlugFromUrl(router.asPath)
+    const index = ifaData.findIndex((product) => product.slug === slug)
+
+    setProductIndex(index)
+  }, [router])
 
   return (
     <Layout>
@@ -46,37 +49,35 @@ export default function Product() {
           <div className="flex flex-row flex-wrap">
             <div className="flex-shrink w-full max-w-full">
               <div className="box-one flex flex-row flex-wrap">
-                {ifaData
-                  .filter((e, i) => i === productIndex)
-                  .map((props, index) => (
-                    <React.Fragment key={index}>
-                      <div className="flex-shrink w-full max-w-full pb-1 lg:pb-0 lg:pr-1">
-                        <div className="relative w-full h-full pl-8 mb-4 overflow-hidden bg-gray-100 rounded-lg pt-auto transition duration-300 ease-in-out hover:shadow-lg hover:scale-105">
-                          <a href={props.link}>
-                            <Image
-                              className="flex overflow-hidden shadow-md rounded-t-md"
-                              src={props.featured_image}
-                              alt=""
-                              width="800"
-                              height="400"
-                            />
-                            <div className="relative px-5 pb-5 bottom-0 w-full bg-gradient-cover mx-auto pt-auto">
-                              <h2 className="font-semibold text-xl text-primary mb-1 pt-8 break-words">
-                                {props.title}
-                              </h2>
-                              <p className="block text-md text-tertiary mb-1 mx-auto break-words">
-                                {props.subtitle}
-                              </p>
-                              <div className="pt-2">
-                                <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
-                                {props.date}
-                              </div>
+                {productIndex !== -1 && (
+                  <React.Fragment>
+                    <div className="flex-shrink w-full max-w-full pb-1 lg:pb-0 lg:pr-1">
+                      <div className="relative w-full h-full pl-8 mb-4 overflow-hidden bg-gray-100 rounded-lg pt-auto transition duration-300 ease-in-out hover:shadow-lg hover:scale-105">
+                        <a href={ifaData[productIndex].link}>
+                          <Image
+                            className="flex overflow-hidden shadow-md rounded-t-md"
+                            src={ifaData[productIndex].featured_image}
+                            alt=""
+                            width="800"
+                            height="400"
+                          />
+                          <div className="relative px-5 pb-5 bottom-0 w-full bg-gradient-cover mx-auto pt-auto">
+                            <h2 className="font-semibold text-xl text-primary mb-1 pt-8 break-words">
+                              {ifaData[productIndex].title}
+                            </h2>
+                            <p className="block text-md text-tertiary mb-1 mx-auto break-words">
+                              {ifaData[productIndex].subtitle}
+                            </p>
+                            <div className="pt-2">
+                              <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
+                              {ifaData[productIndex].date}
                             </div>
-                          </a>
-                        </div>
+                          </div>
+                        </a>
                       </div>
-                    </React.Fragment>
-                  ))}
+                    </div>
+                  </React.Fragment>
+                )}
               </div>
             </div>
           </div>
