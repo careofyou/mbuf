@@ -6,7 +6,7 @@ import Image from "next/image"
 import { VerticalTimeline } from "react-vertical-timeline-component"
 
 import "react-vertical-timeline-component/style.min.css"
-import { ifaData } from "../../../lib/data"
+import { ifaData } from "@/../lib/data"
 
 export default function Experience() {
   return (
