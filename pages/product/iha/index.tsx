@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 
 import Layout from "@/Layout"
-import ProductBlockifa from "@/ProductBlock/ProductBlockifa"
+import ProductBlockiha from "@/ProductBlock/ProductBlockiha/"
 import SEO from "@/SEO"
 
 export default function Product() {
@@ -25,7 +25,7 @@ export default function Product() {
           ></motion.div>
         </div>
       </div>
-      <ProductBlockifa />
+      <ProductBlockiha />
     </Layout>
   )
 }

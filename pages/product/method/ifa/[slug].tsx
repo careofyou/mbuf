@@ -4,9 +4,9 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { useRouter } from "next/router"
 
-import Layout from "../../../../components/Layout"
-import SEO from "../../../../components/SEO"
-import { ifaData } from "../../../../lib/data"
+import { ifaData } from "@/../lib/data"
+import Layout from "@/Layout"
+import SEO from "@/SEO"
 
 export default function Product() {
   const router = useRouter()
@@ -48,7 +48,7 @@ export default function Product() {
         <div className="mx-auto xl:container pt-auto">
           <div className="flex flex-row flex-wrap">
             <div className="flex-shrink w-full max-w-full">
-              <div className="box-one flex flex-row flex-wrap">
+              <div className="flex flex-row flex-wrap box-one">
                 {productIndex !== -1 && (
                   <React.Fragment>
                     <div className="flex-shrink w-full max-w-full pb-1 lg:pb-0 lg:pr-1">
@@ -61,15 +61,15 @@ export default function Product() {
                             width="800"
                             height="400"
                           />
-                          <div className="relative px-5 pb-5 bottom-0 w-full bg-gradient-cover mx-auto pt-auto">
-                            <h2 className="font-semibold text-xl text-primary mb-1 pt-8 break-words">
+                          <div className="relative bottom-0 w-full px-5 pb-5 mx-auto bg-gradient-cover pt-auto">
+                            <h2 className="pt-8 mb-1 text-xl font-semibold break-words text-primary">
                               {ifaData[productIndex].title}
                             </h2>
-                            <p className="block text-md text-tertiary mb-1 mx-auto break-words">
+                            <p className="block mx-auto mb-1 break-words text-md text-tertiary">
                               {ifaData[productIndex].subtitle}
                             </p>
                             <div className="pt-2">
-                              <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
+                              <div className="inline-block h-3 mr-2 border-l-2 border-red-600"></div>
                               {ifaData[productIndex].date}
                             </div>
                           </div>
