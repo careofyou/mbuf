@@ -1,20 +1,11 @@
-import { motion } from "framer-motion"
-
-import Layout from "../../../../components/Layout"
-import SectionWorkList from "../../../../components/SectionWorkList"
-import SEO from "../../../../components/SEO"
-import { TriSquareIcon } from "../../../../components/StripeIcons"
-import ProductBlockcontrol from "../../../../components/ProductBlock/ProductBlockcontrol"
-import ProductBlockequipment from "../../../../components/ProductBlock/ProductBlockequipment"
-import ProductBlockifa from "../../../../components/ProductBlock/ProductBlockifa"
-import ProductBlockiha from "../../../../components/ProductBlock/ProductBlockiha"
-import ProductBlockpcr from "../../../../components/ProductBlock/ProductBlockpcr"
-import ProductBlockrefrence from "../../../../components/ProductBlock/ProductBlockrefrence"
-
 import React from "react"
 
-import { resarchsData } from "../../../../lib/data"
+import { motion } from "framer-motion"
 import Image from "next/image"
+
+import Layout from "../../../components/Layout"
+import SEO from "../../../components/SEO"
+import { ifaData } from "../../../lib/data"
 
 export default function Product() {
   let slug = (url) => new URL(url).pathname.match(/[^\/](?!.*[\/])+/g)
