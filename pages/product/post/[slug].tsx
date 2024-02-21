@@ -6,11 +6,11 @@ import {
 } from "next"
 import Link from "next/link"
 
-import BlogLayout from "../../components/BlogLayout"
-import DocumentRenderer from "../../components/BlogLayout/DocumentRenderer"
-import ProseContainer from "../../components/BlogLayout/ProseContainer"
-import Layout from "../../components/Layout"
-import SEO from "../../components/SEO"
+import BlogLayout from "../../../components/BlogLayout"
+import DocumentRenderer from "../../../components/BlogLayout/DocumentRenderer"
+import ProseContainer from "../../../components/BlogLayout/ProseContainer"
+import Layout from "../../../components/Layout"
+import SEO from "../../../components/SEO"
 import { query } from ".keystone/api"
 
 export default function PostPage({
