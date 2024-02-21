@@ -1,8 +1,20 @@
+import React from "react"
+
 import MotionSection from "./MotionSection"
 import NavLink from "./NavLink"
 
-const MobileNavigation: React.FC = () => (
-  <div className="absolute z-10 flex h-full w-full justify-center bg-blue-200">
+interface MobileNavigationProps {
+  showMobileNavigation: boolean
+}
+
+const MobileNavigation: React.FC<MobileNavigationProps> = ({
+  showMobileNavigation,
+}) => (
+  <div
+    className={`absolute z-10 flex h-full w-full justify-center bg-blue-200 ${
+      showMobileNavigation ? "" : "hidden"
+    }`}
+  >
     <div className="mt-24 flex flex-col space-y-4 text-center">
       <MotionSection>
         <NavLink href="/" isMobileNavigation className="">

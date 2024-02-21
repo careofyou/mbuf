@@ -5,10 +5,10 @@ import { useEffect, useState } from "react"
 import { AnimatePresence } from "framer-motion"
 import type { AppProps } from "next/app"
 import { useRouter } from "next/router"
-import { useScrollBlock } from "../components/Nav/useScrollBlock"
 
 import Footer from "../components/Footer"
 import Nav from "../components/Nav"
+import { useScrollBlock } from "../components/Nav/useScrollBlock"
 import * as ga from "../lib/ga"
 
 function MyApp({ Component, pageProps }: AppProps) {
