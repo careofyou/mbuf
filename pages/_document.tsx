@@ -1,13 +1,7 @@
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-  DocumentContext,
-} from "next/document"
+import Document, { Html, Head, Main, NextScript } from "next/document"
 
-class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
+class CustomDocument extends Document {
+  static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
   }
@@ -23,15 +17,15 @@ class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
             rel="stylesheet"
-          ></link>
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
             rel="stylesheet"
-          ></link>
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap"
             rel="stylesheet"
-          ></link>
+          />
 
           <script
             async
@@ -40,13 +34,10 @@ class MyDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-              page_path: window.location.pathname,
-            });
-          `,
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+              `,
             }}
           />
         </Head>
@@ -59,4 +50,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument
+export default CustomDocument

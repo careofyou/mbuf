@@ -4,7 +4,7 @@ import Layout from "../../../../components/Layout"
 import ProductBlockiha from "../../../../components/ProductBlock/ProductBlockiha/"
 import SEO from "../../../../components/SEO"
 
-export function Product() {
+export default function Product() {
   return (
     <Layout>
       <SEO
