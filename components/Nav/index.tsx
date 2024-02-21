@@ -104,7 +104,7 @@ const Header = () => {
     <div className="sticky top-0 z-10 border-b  bg-gray-100 shadow-md w-full fixed top-0 left-0">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
         {/* logo section */}
-        <div className="font-bold text-3x2 cursor-pointer flex items-center gap-1">
+        <div className="font-verdana text-3x2 cursor-pointer flex items-center gap-1">
           {/* <BookOpenIcon className="w-7 h-7 text-blue-600" /> */}
           <span>Медико-биологический&nbsp;Союз</span>
         </div>
@@ -123,7 +123,7 @@ const Header = () => {
         >
           {navigation.map((item, i) => (
             <div
-              className="md:ml-8 md:my-0 my-7 font-semibold"
+              className="md:ml-8 md:my-0 my-7 font-verdana"
               key={item.name}
               onClick={(toggleMenu) => setToggleMenu(!toggleMenu)}
             >

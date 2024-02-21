@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["PlusJakartaSans", "sans-serif"],
+        verdana: ["Verdana", "sans-serif"],
         serif: [
           "Charter",
           "ui-serif",

@@ -8,8 +8,8 @@
 }
 @font-face {
   font-family: "Verdana";
-  src: url("/fonts/Verdana.ttf") format("tff"),
-    url("/fonts/Verdana.ttf-Regular.woff2") format("ttf");
+  src: url("/fonts/Verdana.woff") format("woff"),
+    url("/fonts/Verdana.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
