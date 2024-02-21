@@ -8,8 +8,8 @@ import SEO from "../../../components/SEO"
 import { ifaData } from "../../../lib/data"
 
 export default function Product() {
+  const currentUrl = typeof window !== "undefined" ? window.location.href : ""
   let slug = (url) => new URL(url).pathname.match(/[^\/](?!.*[\/])+/g)
-  const currentUrl = window.location.href
   var x = slug(currentUrl)
   var y: number = +x
   return (

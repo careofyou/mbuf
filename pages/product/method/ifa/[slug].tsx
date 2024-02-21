@@ -8,10 +8,19 @@ import SEO from "../../../../components/SEO"
 import { ifaData } from "../../../../lib/data"
 
 export default function Product() {
-  let slug = (url) => new URL(url).pathname.match(/[^\/](?!.*[\/])+/g)
-  const currentUrl = window.location.href
-  var x = slug(currentUrl)
-  var y: number = +x
+  // Function to get the slug from the URL
+  const getSlugFromUrl = (url: string) => {
+    const segments = new URL(url).pathname.split("/")
+    return segments[segments.length - 1]
+  }
+
+  // Get the slug from the current URL
+  const currentUrl = typeof window !== "undefined" ? window.location.href : ""
+  const slug = getSlugFromUrl(currentUrl)
+
+  // Find the index of the product in the data array
+  const productIndex = ifaData.findIndex((product) => product.slug === slug)
+
   return (
     <Layout>
       <SEO
@@ -33,16 +42,16 @@ export default function Product() {
         </div>
       </div>
       <div className="bg-white">
-        <div className="xl:container mx-auto pt-auto">
+        <div className="mx-auto xl:container pt-auto">
           <div className="flex flex-row flex-wrap">
-            <div className="flex-shrink max-w-full w-full">
+            <div className="flex-shrink w-full max-w-full">
               <div className="box-one flex flex-row flex-wrap">
                 {ifaData
-                  .filter((e, i) => i > y - 1 && i <= y)
+                  .filter((e, i) => i === productIndex)
                   .map((props, index) => (
                     <React.Fragment key={index}>
-                      <div className="flex-shrink max-w-full w-full pb-1 lg:pb-0 lg:pr-1">
-                        <div className="relative  w-full h-full pt-auto pl-8 mb-4 overflow-hidden bg-gray-100 rounded-lg transition duration-300 ease-in-out hover:shadow-lg hover:scale-105">
+                      <div className="flex-shrink w-full max-w-full pb-1 lg:pb-0 lg:pr-1">
+                        <div className="relative w-full h-full pl-8 mb-4 overflow-hidden bg-gray-100 rounded-lg pt-auto transition duration-300 ease-in-out hover:shadow-lg hover:scale-105">
                           <a href={props.link}>
                             <Image
                               className="flex overflow-hidden shadow-md rounded-t-md"

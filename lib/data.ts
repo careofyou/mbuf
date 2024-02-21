@@ -297,6 +297,7 @@ export const ifaData = [
     link: "method/equipment",
     category: ["News"],
     author: "NSt Writer",
+    slug: "slug-1",
   },
   {
     title: "ВИЧ",
@@ -307,6 +308,7 @@ export const ifaData = [
     link: "method/equipment",
     category: ["News"],
     author: "NSt Writer",
+    slug: "slug-2",
   },
   {
     title: "Гепатит В",
@@ -317,6 +319,7 @@ export const ifaData = [
     link: "method/equipment",
     category: ["News"],
     author: "NSt Writer",
+    slug: "slug-3",
   },
   {
     title: "Гепатит С",
@@ -327,6 +330,7 @@ export const ifaData = [
     link: "method/equipment",
     category: ["News"],
     author: "NSt Writer",
+    slug: "slug-3",
   },
   {
     title: "Сифилис",
@@ -337,6 +341,7 @@ export const ifaData = [
     link: "method/equipment",
     category: ["News"],
     author: "NSt Writer",
+    slug: "slug-4",
   },
   {
     title: "Хламидиоз",
@@ -347,6 +352,7 @@ export const ifaData = [
     link: "method/equipment",
     category: ["News"],
     author: "NSt Writer",
+    slug: "slug-5",
   },
   {
     title: "Токсоплазмоз",
@@ -357,6 +363,7 @@ export const ifaData = [
     link: "method/equipment",
     category: ["News"],
     author: "NSt Writer",
+    slug: "slug-6",
   },
   {
     title: "Краснуха",
@@ -367,6 +374,7 @@ export const ifaData = [
     link: "method/equipment",
     category: ["News"],
     author: "NSt Writer",
+    slug: "slug-7",
   },
 ] as const
 export const ihaData = [
