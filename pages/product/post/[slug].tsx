@@ -68,9 +68,11 @@ export async function getStaticPaths(): Promise<GetStaticPathsResult> {
   })
 
   const paths = posts
-    .map((post: Post) => post.slug)
-    .filter((slug: string): slug is string => !!slug)
-    .map((slug: string) => `/post/${slug}`)
+    .map((post: Post) => ({
+      params: { slug: post.slug },
+    }))
+    .map((params) => ({ ...params, locale: "en" })) // Adjust locale if needed
+    .filter((params) => !!params.slug)
 
   return {
     paths,
