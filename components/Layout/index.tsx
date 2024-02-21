@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+
 import ThemeContextProvider from "../NewsBlock//theme-context"
 
 type Props = {

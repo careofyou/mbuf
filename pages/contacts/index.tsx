@@ -1,8 +1,5 @@
-import { motion } from "framer-motion"
-
 import Layout from "../../components/Layout"
 import SectionWorkList from "../../components/SectionWorkList"
-import SEO from "../../components/SEO"
 import { TriSquareIcon } from "../../components/StripeIcons"
 
 export default function Contacts() {
