@@ -1,5 +1,3 @@
-import { motion } from "framer-motion"
-
 import Layout from "../../../../components/Layout"
 import ProductBlockiha from "../../../../components/ProductBlock/ProductBlockiha/"
 import SEO from "../../../../components/SEO"
@@ -17,12 +15,7 @@ export default function Product() {
           <div className="inset-y-0  lg:mt-40 lg:mr-20"></div>
         </div>
         <div className="absolute top-0 right-44">
-          <motion.div
-            className="hidden overflow-hidden md:block md:w-40 md:h-40 rounded-md"
-            initial={{ rotate: 10 }}
-            animate={{ rotate: 0 }}
-            transition={{ type: "spring", bounce: 0.25, mass: 2 }}
-          ></motion.div>
+          <div className="hidden overflow-hidden md:block md:w-40 md:h-40 rounded-md"></div>
         </div>
       </div>
       <ProductBlockiha />
